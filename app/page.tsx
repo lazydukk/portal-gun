@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-slate-900">
       <h1 className="text-9xl text-indigo-600 text-center mb-4">lazydukk</h1>
-      <p className="text-xl text-white text-center">portal gun for lazydukk's portfolio in the planet C137</p>
+      <p className="text-xl text-white text-center">portal gun for lazydukk/portfolio in the planet C137</p>
       <span className="text-sm text-gray-400">on hold as of exams </span>
       <a href="https://github.com/lazydukk/portal-gun" className="mr-4 hover:underline md:mr-6 ">Github</a>
 
