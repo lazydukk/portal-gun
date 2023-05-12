@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       fontFamily: {
         pop: ['var(--font-pop)'],
-        roboto: ['var(--font-roboto)'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
