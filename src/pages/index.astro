@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class="w-screen h-screen">
+		<main class="md:max-xl:flex">
+			<div class="text-center md:text-sm">
+				<h1 class="pt-96 justify-center items-center text-slate-900 font-extrabold text-9xl flex">lazydukk/portal-gun</h1>
+				<h2 class="pt-10 font-bold text-3xl">new stuff soon!</h2>
+				<div class="font-semibold text-teal-700">
+					<a href="https://github.com/lazydukk/" class="hover:text-teal-900">@github</a>
+					<a href="https://twitter.com/lazydukk/" class="hover:text-teal-900">@titter</a>
+					<a href="https://instagram.com/lazydukk/" class="hover:text-teal-900">@instagram</a>
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
