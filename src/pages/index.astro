@@ -1,29 +1,35 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import "../style/global.css";
+const siteTitle = "lazydukk/portal-gun | advanced alien";
+const description =
+	"lazydukk AKA bdas is a 16y/o self taught programmer / designer / producer who plays scrabble";
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="icon" type="image-x/icon" href="/favicon.ico" />
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="description" content={description} />
+		<meta property="og:title" content={siteTitle} />
+		<meta property="og:description" content={description} />
+		<title>{siteTitle}</title>
+		<meta name="theme-color" content="#000000" />
 	</head>
-	<body class="w-screen h-screen">
-		<main class="md:max-xl:flex">
-			<div class="text-center md:text-sm">
-				<h1 class="pt-96 justify-center items-center text-slate-900 font-extrabold text-9xl flex">lazydukk/portal-gun</h1>
-				<h2 class="pt-10 font-bold text-3xl">new stuff soon!</h2>
-				<div class="font-semibold text-teal-700">
-					<a href="https://github.com/lazydukk/" class="hover:text-teal-900">@github</a>
-					<a href="https://twitter.com/lazydukk/" class="hover:text-teal-900">@titter</a>
-					<a href="https://instagram.com/lazydukk/" class="hover:text-teal-900">@instagram</a>
+	<body class="h-screen bg-[#11111b]">
+		<main>
+			<div class="flex h-screen w-screen">
+				<div class="m-auto">
+					<a
+						href="https://github.com/lazydukk/"
+						class="font-black text-transparent text-8xl bg-clip-text bg-gradient-to-r from-cpcn-blue to-cpcn-green sm:text-1xl a-hover"
+						>lazydukk/portal-gun</a
+					>
+					<div class="flex items-center justify-center p-4 align-middle">
+						<p class="mt-10 text-cpcn-subtext1 text-xl font-light md:text-lg sm:text-sm">from planet C137</p>
+					</div>
 				</div>
 			</div>
 		</main>
-		<Footer />
 	</body>
 </html>
