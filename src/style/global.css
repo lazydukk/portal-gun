@@ -17,6 +17,9 @@
 .a-hover:hover {
     color: #fff;
     font-weight: 800;
-    transition: 1.3s;
+    transition: 0.7s;
 
+}
+.link-hover:hover {
+    transition: 1s;
 }
