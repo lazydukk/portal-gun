@@ -1,7 +1,7 @@
 {
-  "name": "ld-portal-gun",
+  "name": "portal-gun",
   "type": "module",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
-    "astro": "^2.7.2",
+    "astro": "^2.10.14",
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
